@@ -14,15 +14,14 @@ import VideoSection from "@/component/video/VideoSection";
 import WorkSection from "@/component/work/WorkSection";
 
 export const metadata = {
-  title: "Школа астрологии InGenium. Обучение астрологии онлайн для начинающих",
-  description:
-    "Обучение астрологии по авторской программе П.Дементьева–бесплатный урок из курса натальной астрологии. Наша школа астрологии приглашает на онлайн-обучение астрологии. Курсы астрологии от 1000 грн. По окончании выдается сертификат. ☎: +38 (094) 490-75-26 $ Лучшие цены.",
+  title: "Eduor Home Page 1",
+  description: "Developed by Azizur Rahman",
 };
 
 export default function Home() {
   return (
     <>
-      <NavbarSection style="" logo="img/home/logo-main-color.png" />
+      <NavbarSection style="" logo="images/logo.png" />
       <BannerSection />
       <CategorySection />
       <AboutSection />

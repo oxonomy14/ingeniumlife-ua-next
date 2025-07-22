@@ -7,8 +7,7 @@ const CategorySection = () => {
         <div className="row">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp">
             <div className="tf__heading_area mb_15">
-              <h5>OUR COURSE CATEGORIES</h5>
-              <h2>We success for categories creative students.</h2>
+              <h2>Учиться в нашей школе астрологии легко и интересно</h2>
             </div>
           </div>
         </div>
@@ -19,8 +18,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Music Conference</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Материалы</h3>
+                <p>
+                  Предоставляем уникальные авторские методические пособия,
+                  чек-листы, таблицы для более простого восприятия теории
+                </p>
               </div>
             </div>
           </div>
@@ -30,8 +32,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Book Exclusive</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Практика</h3>
+                <p>
+                  Разбираем натальные карты учеников в ходе обучения астрологии
+                  и рассказываем о профессиональных секретах
+                </p>
               </div>
             </div>
           </div>
@@ -41,8 +46,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>School Study</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Канал в Telegram</h3>
+                <p>
+                  Приглашаем вступить в наше сообщество, чтобы получить доступ к
+                  интересному контенту и общаться с единомышленниками
+                </p>
               </div>
             </div>
           </div>
@@ -52,8 +60,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>School Study</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Записи занятий</h3>
+                <p>
+                  Даем постоянный доступ ко всем записям – можно пересмотреть
+                  какой-либо урок в любой момент
+                </p>
               </div>
             </div>
           </div>
@@ -63,8 +74,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Exclusive Party</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Связь с куратором</h3>
+                <p>
+                  Предлагаем задавать вопросы по пройденным лекциям – можно
+                  позвонить по телефону или написать через мессенджеры
+                </p>
               </div>
             </div>
           </div>
@@ -74,8 +88,11 @@ const CategorySection = () => {
                 <i className="fa fa-book"></i>
               </div>
               <div className="tf__single_category_text">
-                <h3>Exclusive Man</h3>
-                <p>We can provide you with a handyan in London.</p>
+                <h3>Встречи вне программы</h3>
+                <p>
+                  Проводим дополнительные онлайн встречи в рамках авторского
+                  канала Павла Дементьева для закрепления материала
+                </p>
               </div>
             </div>
           </div>

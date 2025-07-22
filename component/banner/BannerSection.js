@@ -11,18 +11,17 @@ const BannerSection = () => {
         <div className="row">
           <div className="col-xl-7 col-lg-8">
             <div className="tf__banner_text wow fadeInUp">
-              <h5>Welcome to Eduon!</h5>
               <h1>
-                Students for <span>Little</span> Education from.
+                Школа астрологии <span>InGenium Life</span>
               </h1>
               <p>
-                Our agency can only be as strong as our people & because of team
-                have designed game changing products.
+                Обучение астрологии онлайн - научим вас управлять собственной
+                жизнью и помогать окружающим
               </p>
               <ul className="d-flex flex-wrap align-items-center">
                 <li>
                   <Link className="common_btn" href="/about">
-                    Read More
+                    Каталог курсов
                   </Link>
                 </li>
                 <li>

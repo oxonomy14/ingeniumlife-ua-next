@@ -19,15 +19,15 @@ const AboutSection = () => {
             <div className="col-xl-7 col-lg-7">
               <div className="tf__about_top_text">
                 <div className="tf__about_top_text_center">
-                  <h4>Study Off Flexibly</h4>
+                  <h2>Хотите стать востребованным астрологом?</h2>
                   <p>
-                    We can provide you with a reliable handyan in Please input
-                    an email address down below school. Please input anand
-                    school. included the today.
+                    Записывайтесь на занятия по тел.: +38 094 490-75-26 или
+                    пишите на WhatsApp. С нами Вы научитесь техникам чтения
+                    натальной карты, синтеза и анализа гороскопа.
                   </p>
                 </div>
                 <a href="#" className="common_btn">
-                  read more
+                  Связаться с нами
                 </a>
               </div>
             </div>
@@ -38,13 +38,12 @@ const AboutSection = () => {
           <div className="col-xl-6 col-md-9 col-lg-6 wow fadeInLeft">
             <div className="tf__about_text">
               <div className="tf__heading_area tf__heading_area_left mb_25">
-                <h5>OUR About Us</h5>
-                <h2>District is Made of about Students Childhood.</h2>
+                <h2>
+                  Получите ответы на волнующие вас вопросы: пройдите курс
+                  астрологии
+                </h2>
               </div>
-              <p>
-                Business tailored it design, management & support services
-                business agency elit, sed do eiusmod tempor.{" "}
-              </p>
+              <p>Примеры вопросов, ключи к ответам на которые Вы получите: </p>
               <ul>
                 <li>Business school's Institut constructivism.</li>
                 <li>We give management school best.</li>

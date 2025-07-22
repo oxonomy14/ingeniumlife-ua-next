@@ -28,8 +28,38 @@ const BlogDetailSection = ({ blogDesc }) => {
                 </ul>
                 <h2>{blogDesc.longTitle}</h2>
                 <div dangerouslySetInnerHTML={{ __html: blogDesc.longDesc }} />
-              </div>
 
+                <div className="tf__details_quot_text">
+                  <p>
+                    There are many variations of passages of Lorem Ipsum
+                    available, but the majority have suffered alteration in some
+                    form, by injected humour, oris ut. In interdum sem quis
+                    congue accumsan. Pellentesque convallis scelerisque eros.
+                    Etiam vestibulum ultricies finibus. . Nunc ac sem sit amet
+                    purus luctus lobortis dui inorci.
+                  </p>
+                  <h4>Porata Masat</h4>
+                  <h5>Devlopment</h5>
+                </div>
+                <div className="tf__blog_details_center_img">
+                  <img
+                    src="/images/blog_details_center_img.jpg"
+                    alt="blog details"
+                    className="img-fluid w-100"
+                  />
+                </div>
+                <p>
+                  Lorem ipsum is simply free text dolor sit amet, consectetur
+                  notted adipisicing elit eiusmod tempor incididunt ut abore et
+                  dolore magna aliqua lonm andhn is a lon established fact that
+                  a reader will be distracted by the readable content
+                </p>
+                <ul className="list">
+                  <li>Business school's Institut constructivism.</li>
+                  <li>We give management school best.</li>
+                  <li>Media in this school solution.</li>
+                </ul>
+              </div>
               <div className="tf__blog_comment mt_60 wow fadeInUp">
                 <h3>Comments (3)</h3>
                 <div className="tf__single_comment">
