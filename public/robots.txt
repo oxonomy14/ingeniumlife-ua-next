@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /sign-in
+Disallow: /sign-up
+# Disallow: /contact
+# Disallow: /team/
+# Disallow: /courses/
+# Disallow: /events/
+
+Allow: /
+
+# Host
+Host: https://ingeniumlife-ua-next.vercel.app
+
+# Sitemaps
+Sitemap: https://ingeniumlife-ua-next.vercel.app/sitemap.xml
+Sitemap: https://ingeniumlife-ua-next.vercel.app/sitemap-0.xml
