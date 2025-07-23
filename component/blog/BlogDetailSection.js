@@ -1,36 +1,60 @@
 "use client";
-import { blogData } from "@/data/Data";
+//import { blogData } from "@/data/Data";
 import Link from "next/link";
 import React from "react";
+import { format } from "date-fns";
+import { useEffect } from "react";
 
-const BlogDetailSection = ({ blogDesc }) => {
+const BlogDetailSection = ({ blogDesc, postsData }) => {
+  useEffect(() => {
+    if (!blogDesc?._id) return;
+
+    fetch(
+      `https://nodejs-ingenium-life-ua.onrender.com/blog/${blogDesc._id}/increment-views`,
+      {
+        method: "POST",
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Views incremented:", data);
+      })
+      .catch((err) => {
+        console.error("Error incrementing views:", err);
+      });
+  }, [blogDesc._id]);
+
   return (
-    <section className="tf__blog_details_page mt_195 xs_mt_100">
+    <section id="read" className="tf__blog_details_page mt_195 xs_mt_100">
       <div className="container">
         <div className="row">
           <div className="col-xl-8 col-lg-8">
             <div className="tf__blog_details_area">
-              <div className="tf__blog_details_img wow fadeInUp">
-                <img
-                  src={`/${blogDesc.imgSrc}`}
-                  alt="blog details"
-                  className="img-fluid w-100"
-                />
-              </div>
-              <div className="tf__blog_details_text wow fadeInUp">
-                <ul className="date d-flex flex-wrap">
-                  <li>
-                    <i className="far fa-user-edit"></i> {blogDesc.author}
-                  </li>
-                  <li>
-                    <i className="fal fa-calendar-alt"></i> {blogDesc.date}
-                  </li>
-                </ul>
-                <h2>{blogDesc.longTitle}</h2>
-                <div dangerouslySetInnerHTML={{ __html: blogDesc.longDesc }} />
-              </div>
+              <article>
+                <div className="tf__blog_details_img wow fadeInUp">
+                  <img
+                    src={`${blogDesc.imgSrcPostTop}`}
+                    alt={`${blogDesc.keyWordImgSrcPostTop}`}
+                    className="img-fluid w-100"
+                  />
+                </div>
+                <div className="tf__blog_details_text wow fadeInUp">
+                  <ul className="date d-flex flex-wrap">
+                    <li>
+                      <i className="far fa-user-edit"></i> {blogDesc.author}
+                    </li>
+                    <li>
+                      <i className="fal fa-calendar-alt"></i>
+                      {format(new Date(blogDesc.date), "dd.MM.yyyy")}
+                    </li>
+                  </ul>
+                  <h2>{blogDesc.title}</h2>
+                  <div
+                    dangerouslySetInnerHTML={{ __html: blogDesc.longDesc }}
+                  />
+                </div>
 
-              <div className="tf__blog_comment mt_60 wow fadeInUp">
+                {/* <div className="tf__blog_comment mt_60 wow fadeInUp">
                 <h3>Comments (3)</h3>
                 <div className="tf__single_comment">
                   <div className="tf__single_comment_img">
@@ -106,7 +130,8 @@ const BlogDetailSection = ({ blogDesc }) => {
                     </div>
                   </div>
                 </form>
-              </div>
+              </div> */}
+              </article>
             </div>
           </div>
           <div className="col-xl-4 col-lg-4">
@@ -133,22 +158,23 @@ const BlogDetailSection = ({ blogDesc }) => {
                 </a>
               </div>
               <div className="tf__sidebar_blog sidebar_item">
-                <h3>Recent Post</h3>
+                <h3>Недавние публикации</h3>
                 <ul>
-                  {blogData.slice(0, 3).map((item) => (
+                  {postsData.slice(0, 3).map((item) => (
                     <li key={item.id}>
                       <div className="img">
                         <img
-                          src={`/${item.imgSrc}`}
+                          src={`${item.imgSrc}`}
                           alt="blog"
                           className="img-fluid w-100"
                         />
                       </div>
                       <div className="text">
                         <p>
-                          <i className="far fa-calendar-alt"></i> {item.date}
+                          <i className="far fa-calendar-alt"></i>{" "}
+                          {format(new Date(item.date), "dd.MM.yyyy")}
                         </p>
-                        <Link href={`/blog/${item.slug}`}>{item.title}</Link>
+                        <Link href={`/${item.slug}`}>{item.longTitle}</Link>
                       </div>
                     </li>
                   ))}
@@ -226,11 +252,11 @@ const BlogDetailSection = ({ blogDesc }) => {
               </div>
               <div className="tf__sidebar_apply">
                 <img
-                  src="/images/sidebar_img.jpg"
-                  alt="apply"
+                  src="https://res.cloudinary.com/dzkzewyh8/image/upload/v1753265006/baner-sidebar-1_uc3ith.webp"
+                  alt="обучение астрологии"
                   className="img-fluid w-100"
                 />
-                <a href="#">apply now</a>
+                <a href="#">Подробнее</a>
               </div>
             </div>
           </div>

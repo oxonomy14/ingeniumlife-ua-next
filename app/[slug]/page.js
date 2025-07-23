@@ -2,14 +2,22 @@ import BlogDetailSection from "@/component/blog/BlogDetailSection";
 import BreadcrumbSection from "@/component/breadcrumb/BreadcrumbSection";
 import ErrorSection from "@/component/error/ErrorSection";
 import Layout from "@/component/layout/Layout";
-import { blogData } from "@/data/Data";
-// export const metadata = {
-//   title: 'Eduor Blog Details Page',
-//   description: 'Developed by Azizur Rahman',
-// }
+//import { blogData } from "@/data/Data";
+import { fetchPosts } from "../../services/api.js";
+
+const getData = async () => {
+  try {
+    const postsData = await fetchPosts();
+    return Array.isArray(postsData) ? postsData : [];
+  } catch (error) {
+    console.error("Failed to fetch posts:", error);
+    return [];
+  }
+};
 
 export async function generateMetadata({ params }) {
-  const blogDesc = blogData.find((item) => item.slug === params.slug);
+  const postsData = await getData();
+  const blogDesc = postsData.find((item) => item.slug === params.slug);
 
   if (!blogDesc) {
     return {
@@ -24,27 +32,31 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: blogDesc.title,
       description: blogDesc.desc,
-      images: [`/${blogDesc.imgSrc}`],
+      images: [`${blogDesc.imgSrc}`],
       type: "article",
     },
     twitter: {
       card: "summary_large_image",
       title: blogDesc.title,
       description: blogDesc.desc,
-      images: [`/${blogDesc.imgSrc}`],
+      images: [`${blogDesc.imgSrc}`],
     },
   };
 }
 
-export default function BlogDetails({ params }) {
+export default async function BlogDetails({ params }) {
+  const postsData = await getData();
   const { slug } = params;
-  const blogDesc = blogData.find((item) => item.slug === slug);
+  const blogDesc = postsData.find((item) => item.slug === slug);
 
   return (
     <Layout>
-      <BreadcrumbSection header="Блог InGenium" title="Blog Details" />
+      <BreadcrumbSection
+        header={blogDesc.longTitle}
+        title="Перейти к чтению статьи"
+      />
       {blogDesc ? (
-        <BlogDetailSection blogDesc={blogDesc} />
+        <BlogDetailSection blogDesc={blogDesc} postsData={postsData} />
       ) : (
         <ErrorSection type="Blog" />
       )}

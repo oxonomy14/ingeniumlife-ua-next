@@ -140,7 +140,9 @@ vite.config.ts.timestamp-*
 
 
 # Робоча папка з зображенням
-.draft/
+draft/
 
 # Робоча папка з текстами
-.post_html/
+post_html/
+
+pull-requests.txt

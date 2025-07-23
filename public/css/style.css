@@ -323,14 +323,14 @@ button {
   background-image: url(../images/breadcrumb_bg_1.jpg);
 }
 
-.tf__breadcrumb .container {
+/* .tf__breadcrumb .container {
   position: relative;
 }
 
 .tf__breadcrumb .container::after {
   position: absolute;
   content: "";
-  background: url(../images/breadcrumb_bg_img.png);
+  background: url(https://res.cloudinary.com/dzkzewyh8/image/upload/v1753201044/home-banner_jmxrr8.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -339,12 +339,13 @@ button {
   top: -125px;
   right: 0;
   z-index: 1;
-}
+} */
 
 .tf__breadcrumb_text h2 {
   font-size: 60px;
   font-weight: 700;
-  text-transform: capitalize;
+  text-transform: none;
+
   margin-bottom: 15px;
 }
 
@@ -357,7 +358,7 @@ button {
 .tf__breadcrumb_text ul li a {
   font-size: 18px;
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: none;
   color: var(--colorBlack);
   padding-right: 20px;
   position: relative;
@@ -625,7 +626,7 @@ button {
   background-repeat: no-repeat !important;
   background-size: cover !important;
   position: relative;
-  background-image: url(../img/home/home-banner-2.webp);
+  background-image: url(https://res.cloudinary.com/dzkzewyh8/image/upload/v1753180913/home-banner-2_xonuks.webp);
 }
 
 .tf__banner_2 div,
@@ -3031,7 +3032,7 @@ button {
 
 .tf__blog_details_text .date li {
   font-size: 14px;
-  text-transform: capitalize;
+  text-transform: none;
   margin-right: 20px;
 }
 
