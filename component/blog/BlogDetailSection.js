@@ -139,7 +139,7 @@ const BlogDetailSection = ({ blogDesc, postsData }) => {
               <div className="tf__sidebar_search">
                 <form>
                   <input type="text" placeholder="Search..." />
-                  <button type="submit">
+                  <button type="submit" aria-label="поиск">
                     <i className="far fa-search"></i>
                   </button>
                 </form>

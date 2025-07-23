@@ -22,27 +22,30 @@ const FooterSection = () => {
                 </p>
                 <ul className="d-flex flex-wrap">
                   <li>
-                    <a href="#">
+                    <a href="#" aria-label="узнайте о нас больше на facebook">
                       <i className="fab fa-facebook-f"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" aria-label="узнайте о нас больше в instagram">
                       <i className="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" aria-label="узнайте о нас больше в twitter">
                       <i className="fab fa-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="#" aria-label="узнайте о нас больше в pinterest">
                       <i className="fab fa-pinterest-p"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a
+                      href="#"
+                      aria-label="узнайте о нас больше на google-plus"
+                    >
                       <i className="fab fa-google-plus-g"></i>
                     </a>
                   </li>
