@@ -57,6 +57,7 @@ const NavbarSection = ({ style, logo }) => {
           <button
             className="navbar-toggler"
             type="button"
+            aria-label="открыть меню"
             onClick={handleMobileNavOpen}
           >
             <i className="fa fa-bars menu_icon"></i>

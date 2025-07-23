@@ -97,7 +97,7 @@ const FooterSection = () => {
                 </p>
                 <form>
                   <input type="text" placeholder="Your Email" />
-                  <button>send</button>
+                  <button aria-label="подписаться на рассылку">send</button>
                 </form>
               </div>
             </div>

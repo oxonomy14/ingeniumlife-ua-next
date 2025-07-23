@@ -153,7 +153,7 @@ const BlogDetailSection = ({ blogDesc, postsData }) => {
                   We can provide you with a reliable handyan in London. you need
                   to included the today.
                 </p>
-                <a href="#">
+                <a href="#" aria-label="узнать подробнее">
                   <i className="fas fa-long-arrow-right"></i>
                 </a>
               </div>
@@ -256,7 +256,9 @@ const BlogDetailSection = ({ blogDesc, postsData }) => {
                   alt="обучение астрологии"
                   className="img-fluid w-100"
                 />
-                <a href="#">Подробнее</a>
+                <a href="#" aria-label="узнать подробнее о новом курсе">
+                  Подробнее
+                </a>
               </div>
             </div>
           </div>
