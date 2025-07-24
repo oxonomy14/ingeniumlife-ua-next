@@ -22,7 +22,7 @@ export const metadata = {
 export default function Home() {
   return (
     <>
-      <NavbarSection style="" logo="img/home/logo-main-color.png" />
+      <NavbarSection style="" logo="img/home/main-logo-color-180x55.png" />
       <BannerSection />
       <CategorySection />
       <AboutSection />

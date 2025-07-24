@@ -56,13 +56,6 @@ const TestimonialSlider = () => {
             </div>
             <h3 className="title">{item.name}</h3>
             <p className="designation">{item.designation}</p>
-            <p className="rating">
-              <i className="fas fa-star fill"></i>
-              <i className="fas fa-star fill"></i>
-              <i className="fas fa-star fill"></i>
-              <i className="fas fa-star"></i>
-              <i className="fas fa-star"></i>
-            </p>
           </div>
         </div>
       ))}

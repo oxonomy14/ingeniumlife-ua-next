@@ -14,29 +14,18 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
     >
       <ul className={`navbar-nav ${position}`}>
         <li className="nav-item">
-          <a className="nav-link">
-            Home <i className="fa fa-angle-down"></i>
+          <a href="/" className="nav-link">
+            Главная
           </a>
-          <ul className="tf__droap_menu">
-            <li>
-              <SubNavlink href="/">home 1</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/home-2">home 2</SubNavlink>
-            </li>
-            <li>
-              <SubNavlink href="/home-3">home 3</SubNavlink>
-            </li>
-          </ul>
         </li>
         <li className="nav-item">
-          <Navlink href="/about">about us</Navlink>
+          <Navlink href="/about">О нас</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/courses">courses</Navlink>
+          <Navlink href="/courses">Курсы</Navlink>
         </li>
         <li className="nav-item">
-          <Navlink href="/blog">blog</Navlink>
+          <Navlink href="/blog">Блог</Navlink>
         </li>
         <li className="nav-item">
           <a className="nav-link">
@@ -87,19 +76,30 @@ const NavigationSection = ({ position, btnPosition, navRef }) => {
           </ul>
         </li>
         <li className="nav-item">
-          <Navlink href="/contact">contact</Navlink>
+          <Navlink href="/contact">Контакты</Navlink>
         </li>
         {btnPosition ? null : (
           <li className="nav-item">
-            <a className="nav-link common_btn" href="#">
-              LEARN MORE
+            <a
+              className="nav-link common_btn"
+              href="https://wa.me/66804704182?text=Здравствуйте,%20я%20хочу%20задать%20вопрос"
+              aria-label="задать вопрос"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Написать в WhatsApp
             </a>
           </li>
         )}
       </ul>
       {btnPosition ? (
-        <a className="common_btn_2 ms-auto" href="#">
-          learn more
+        <a
+          className="common_btn_2 ms-auto"
+          href="https://wa.me/66804704182?text=Здравствуйте,%20я%20хочу%20задать%20вопрос"
+          aria-label="задать вопрос"
+          rel="noopener noreferrer"
+        >
+          Написать в WhatsApp
         </a>
       ) : null}
     </div>

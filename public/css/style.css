@@ -296,7 +296,7 @@ button {
   font-size: 40px;
   font-weight: 700;
   margin-top: 15px;
-  text-transform: capitalize;
+  text-transform: none;
 }
 
 .tf__heading_area_left {
@@ -995,7 +995,9 @@ button {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   top: -150px;
-  background-image: url(../images/about_top_bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://res.cloudinary.com/dzkzewyh8/image/upload/v1753286073/SCYO4CrNkw_njse4i.webp");
+  /*background-image: url(../images/about_top_bg.jpg);*/
 }
 
 .tf__about_top::after {
@@ -1030,8 +1032,12 @@ button {
 }
 
 .tf__about_top_text_center {
-  max-width: 70%;
+  max-width: 85%;
   padding-right: 70px;
+}
+
+.tf__about_top_text_center h2 {
+  color: var(--colorPrimary);
 }
 
 .tf__about_top_text_center h4 {
@@ -1092,7 +1098,7 @@ button {
 }
 
 .tf__about_text a {
-  width: 190px;
+  width: 230px;
 }
 
 .tf__about_img {
@@ -2049,7 +2055,7 @@ button {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  background-image: url(../images/video_bg.jpg);
+  background-image: url(https://res.cloudinary.com/dzkzewyh8/image/upload/v1753380314/pervuy-urok-1920x489_kz3ciu.jpg);
 }
 
 .tf__video_overlay {
@@ -6595,7 +6601,7 @@ section.tf__counter_3 {
   }
 
   .tf__about_text a {
-    width: 190px;
+    width: 230px;
   }
 
   .tf__single_event_text ul li {

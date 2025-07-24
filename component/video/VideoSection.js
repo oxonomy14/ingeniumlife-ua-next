@@ -18,13 +18,15 @@ const VideoSection = () => {
                 >
                   <i className="fas fa-play"></i>
                 </a>
-                <h4>Let’s best Something Agency</h4>
+                <h4>Посмотрите первый урок из курса натальной астрологии</h4>
                 <p>
-                  There are many variations of passages of agency Lorem Ipsum
-                  Fasts injecte.
+                  чтобы познакомиться с нашей школой и методикой преподавания.
+                  Вы получите базовые знания: Как работает астрология? Главные
+                  мифы об астрологии, Основы чтения натальной карты, Уровни
+                  чтения натальной карты, Строение гороскопа.
                 </p>
                 <a className="common_btn" href="#">
-                  Apply Now
+                  Подать заявку на доступ к системе обучения
                 </a>
               </div>
             </div>

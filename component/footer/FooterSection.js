@@ -11,14 +11,14 @@ const FooterSection = () => {
               <div className="tf__footer_logo_area">
                 <Link className="footer_logo" href="/">
                   <img
-                    src="/images/footer_logo.png"
+                    src="/img/home/logochb.png"
                     alt="Eduor"
                     className="img-fluid w-100"
                   />
                 </Link>
                 <p>
-                  Nemo enim ipsam voluptate quia voluptas sit aspernatur aut
-                  odit aut fugit, sed quia magni this dolores eos qui ratione .
+                  Обучение на курсах таро и астрологии от InGenium - системно и
+                  последовательно
                 </p>
                 <ul className="d-flex flex-wrap">
                   <li>
@@ -77,7 +77,7 @@ const FooterSection = () => {
             <div className="col-xl-3 col-sm-10 col-md-7 col-lg-col-lg-6">
               <div className="tf__footer_content xs_mt_30">
                 <h3>Our Contacts</h3>
-                <p>Adress: 27 Division St, Berakuti, NY 121102, USA</p>
+                <p>Adress: Онлайн обучение</p>
                 <p>
                   <span> Phone: +8 1440 456 782</span>
                   <span>Fax: +8 846512 456 788</span>

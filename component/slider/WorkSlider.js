@@ -54,7 +54,7 @@ const WorkSlider = () => {
             <div className="tf__work_single_text">
               <h3>{item.task}</h3>
               <p>{item.desc}</p>
-              <a href="#">
+              <a>
                 <i className="fas fa-long-arrow-right"></i>
               </a>
             </div>

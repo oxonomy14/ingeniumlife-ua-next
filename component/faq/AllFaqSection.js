@@ -14,8 +14,11 @@ const AllFaqSection = () => {
         <div className="row">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp">
             <div className="tf__heading_area mb_10">
-              <h5>OUR EDUCATION Faq</h5>
-              <h2>District is Made of about Students Childhood.</h2>
+              <h5>обучение астрологии в школе InGenium</h5>
+              <h2>
+                Уникальные курсы астрологии, на которых дают полезные
+                практические знания
+              </h2>
             </div>
           </div>
         </div>

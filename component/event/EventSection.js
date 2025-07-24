@@ -8,8 +8,8 @@ const EventSection = ({ section, startIndex, endIndex }) => {
         <div className="row">
           <div className="col-xl-6 col-md-8 col-lg-6 m-auto wow fadeInUp">
             <div className="tf__heading_area mb_40">
-              <h5>OUR Upcoming Events</h5>
-              <h2>Complete About Students Advance Course.</h2>
+              <h5>курсы астрологии</h5>
+              <h2>Актуальные цены на обучение астрологии</h2>
             </div>
           </div>
         </div>
